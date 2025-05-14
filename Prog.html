@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication & Addition blocks</title>
+    <style>
+        body{
+            background-color: rgb(220, 156, 71);
+        }
+        button{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="calculate(5,3)">5 × 3</button>
+    <button id="5*10" onclick="calculate(5)">5 × 10</button>
+    <button onclick="calculate(3,2)">3 × 2</button>
+    <button onclick="calculate (6,2)">6 × 2</button>
+    <script>
+        function calculate(e,f){
+            if (f===undefined){
+                f=2
+            }
+            document.write(e*f)
+        }
+        function calculate(c,d){
+            if (d===undefined){
+                d=3
+            }
+            document.write(c*d)
+        }
+        function calculate (x,y){
+            if (y===undefined){
+                y=3
+            }
+            document.write(x*y)
+        }
+        function calculate(a,b){
+            if (b===undefined){
+                b= 10
+            }
+            document.write(a*b)
+        }
+
+    </script>
+</body>
+</html>
